@@ -32,7 +32,7 @@ const SignUpScreen = ({navigation}) => {
         navigation.pop();
       })
       .catch(error => {
-        console.log(error);
+        // console.log(error);
         if (error.code === 'auth/email-already-in-use') {
           Alert.alert('Error', 'That email address is already in use!');
         } else if (error.code === 'auth/invalid-email') {
